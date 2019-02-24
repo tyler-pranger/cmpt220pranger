@@ -16,16 +16,16 @@ public static void main(String[] args) {
     // prompt user for a character
        System.out.print( "Input a character: " ); 
     // read first number from user
-       result1 = (char) input.nextInt();
+       result1 = (char) input.next().charAt(0);
     // prompt the user for a second character
        System.out.print( "Input second character: ");
-       result2 = (char) input.nextInt();
+       result2 = (char) input.next().charAt(0);
 	
-	char ch = (char) result1;
-	char ch2 = (char) result2;
-    int i = ch;
-    int j = ch2;
-    System.out.println("Ascii value of " + ch + " and " + ch2 + " = " + (i + j));
+		char ch = (char) result1;
+		char ch2 = (char) result2;
+		int i = ch;
+		int j = ch2;
+		System.out.println("Ascii value of " + ch + " and " + ch2 + " = " + (i + j));
 		    }	        
 	}
 
