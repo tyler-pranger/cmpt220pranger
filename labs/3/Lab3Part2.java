@@ -10,7 +10,7 @@ public class Lab3Part2 {
 			// Test all numbers from 100 to 500
 			for (int i = 100; i <= 500; i++) {
 			// Test if number is divisible by 5 and 7
-			if (i % 5 == 0 || i % 7 == 0) {
+			if (i % 5 == 0 ^ i % 7 == 0) { // JA
 				// increment count
 				count++;	
 				// Test if numbers per line is 10 
