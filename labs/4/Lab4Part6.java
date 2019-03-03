@@ -1,4 +1,4 @@
-
+// JA: ?
 public class Lab4Part6 {
 
 	private static double[] myLists;

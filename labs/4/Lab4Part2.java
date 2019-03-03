@@ -2,7 +2,7 @@
 public class Lab4Part2 {
 
 	public static void main(String[] args) {
-		double[][] matrix = new double[5][5];
+		double[][] matrix = new double[5][5]; // JA: These were chars
 		
 		for (int row = 0; row < matrix.length; row++ ) {
 			for (int column = 0; column < matrix[row].length; column++ ) {

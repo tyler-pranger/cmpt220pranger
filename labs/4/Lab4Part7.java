@@ -4,7 +4,7 @@ public class Lab4Part7 {
 	static 
 	// Function to remove duplicate elements 
 	// This function returns new size of modified array. 
-	int removeDuplicates(int arr[], int n) { 
+	int removeDuplicates(int[] arr, int n) { 
 		// Return, if array is empty 
 		// or contains a single element 
 		if (n==0 || n==1) 
@@ -34,7 +34,7 @@ public class Lab4Part7 {
 	public static void main (String[] args) { 
 		Scanner input = new Scanner(System.in); 
 		System.out.print("Enter a set of numbers to store as an array: ");
-		int arr = input.nextInt(); 
+		int[] arr = input.nextInt(); // JA: You have to read each number into the array
 		int n = arr.length; 
 		
 		n = removeDuplicates(arr, n); 

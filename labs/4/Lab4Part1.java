@@ -18,7 +18,7 @@ public class Lab4Part1 {
         
         for (int i = 0; i <= 50; i++) {
         	convert = i * 2.54;
-        	for (int c = 0; c <= 50; c++) {
+        	for (int c = 0; c <= 50; c++) { // JA: Why is this an inner loop?
         	convert2 = c * 0.39;
         }
         	System.out.println(i + " " + " " + " " + convert + " " + "|" + " " + convert2 + " " + " " + " " + i);
