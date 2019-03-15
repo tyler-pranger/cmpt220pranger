@@ -9,7 +9,7 @@ public class Lab5Part6 {
         //  Initialize array
         initializeArray();
 
-        //  Calculate average
+        //  Calculate average // JA: Row average?
         System.out.println(getAverage());
     }   
 
