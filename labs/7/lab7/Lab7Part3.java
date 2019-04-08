@@ -8,7 +8,9 @@ public class Lab7Part3 {
 		crs1.addStudent("Joe");
 		crs1.addStudent("Jack");
 		crs1.dropStudent("Joe");
-		System.out.println(crs1.getStudents());
+		for (String stud : crs1.getStudents())
+			if (stud != null)
+				System.out.println(stud);
 		
 	}
 

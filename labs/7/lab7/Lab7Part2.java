@@ -12,13 +12,14 @@ public class Lab7Part2 {
 		int num = input.nextInt();
 		StackOfIntegers stack = new StackOfIntegers();
 		findFactors(num,stack);
-		for( int i = 0; i < stack.getSize(); i++) {
+		int size = stack.getSize();
+		for( int i = 0; i < size; i++) {
 			System.out.print(stack.pop() + " ");
 		}
 	}
 
 	public static void findFactors(int num, StackOfIntegers stack) {
-		for (int k = 3; k < num; k++) {
+		for (int k = 2; k <= num; k++) { // JA
 			while (num % k == 0) {
 				stack.push(k);
 				num = num/k;
