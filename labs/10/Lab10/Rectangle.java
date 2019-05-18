@@ -13,6 +13,8 @@ public Rectangle(int length,int width)
   this.length = length;
   this.width = width;
 }
+
+@Override
 public void print()
 {
   System.out.println("Rectangle : length : "+length+" width : "+width +" Area : "+length*width);

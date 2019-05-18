@@ -1,5 +1,7 @@
 package BlackJackJava;
 
+import java.util.Scanner;
+
 public class Blackjack {
     
     private static final String next = null;
@@ -13,13 +15,15 @@ public class Blackjack {
        
        // User starts with $200.
        money = 200; 
+	   
+	   Scanner input = new Scanner(System.in);
     
        while (true) {
            System.out.println("You have " + money + " dollars.");
            do {
               System.out.print("How much money do you want to bet?  (Enter 0 to end.)");
             //Unsure on how to fix .getlnInt in order to carry over input
-              bet = next.getlnInt();
+              bet = input.nextInt();
               if (bet < 0 || bet > money)
                   System.out.println("Your answer must be between 0 and " + money + '.');
            } while (bet < 0 || bet > money);
@@ -69,6 +73,8 @@ public class Blackjack {
             System.out.println("You have Blackjack.  You win.");
             return true;
        }    
+	   
+	   Scanner input = new Scanner(System.in);
        while (true) {
             // Display player's cards, and let user decide to hit or pass
             System.out.println("Your hand is:");
@@ -82,7 +88,7 @@ public class Blackjack {
             char userAction;
             do {
             //Unsure on how to fix .getlnChar to carry over the input
-               userAction = Character.toUpperCase( Character.getlnChar() );
+               userAction = Character.toUpperCase( input.next().charAt(0) );
                if (userAction != 'H' && userAction != 'P')
                   System.out.print("Please respond H or P:  ");
             	} 
